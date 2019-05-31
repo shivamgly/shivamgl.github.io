@@ -1,7 +1,7 @@
-var navOpen = false;
 var nav = document.getElementById('nav');
 var navToggle = document.getElementById('nav-toggle');
 var content = document.getElementById('content');
+var navOpen = false;
 
 function toggleNav () {
     if (navOpen) {
