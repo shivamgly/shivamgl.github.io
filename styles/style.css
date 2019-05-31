@@ -1,0 +1,177 @@
+/* Imports */
+@import url('./fonts.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    height: 2000px;
+    color: #2C3A47;
+    -moz-user-select: none;
+    user-select: none;
+}
+h1 {
+    font-family: 'Trevor', 'Roboto Slab', sans-serif;
+    color: #383A3C;
+    font-size: 60px;
+}
+hr {
+    background-color: #484A4D;
+    border: 0 none;
+    color: #484A4D;
+    height: 3px;
+    width: 50%;
+    
+}
+/* 383a3c */
+
+hr .double{
+    margin: 2px auto;
+}
+.separator {
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 100 !important;
+    font-family: sans-serif;
+}
+.separator span {
+    position: relative;
+    display: inline-block;
+}
+.separator span::before {
+    right: 100%;
+    margin-right: 4px;
+}
+.separator span::after {
+    left: 100%;
+    margin-left: 4px;
+}
+.separator span::before, .separator span::after {
+    content: "" ;
+    position: absolute;
+    height: 6px;
+    border-bottom: 2px solid #383A3C !important;
+    top: 5px;
+    width: 50px;
+}
+.font-trevor {
+    font-family: 'Trevor', 'Roboto Slab', serif;
+}
+.font-hwt {
+    font-family: 'HWTArtz', 'Roboto Slab', serif;
+}
+.font-bazar {
+    font-family: 'Bazar', 'Roboto Slab', serif;
+}
+.font-retro {
+    text-shadow: 1px 2px #FCFAF7, 3px 4px #484A4D;
+}
+.font-retro-less {
+    text-shadow: 1px 1px #FCFAF7, 2px 2px #484A4D;
+}
+.border-lr {
+    border-style: dashed !important;
+    border-color: #383A3C !important;
+    border-width: 0px 1px!important;
+}
+.border-left {
+    border-left-style: dashed !important;
+    border-left-color: rgba(71, 71, 135,0.8) !important;
+    border-left-width: 1px !important;
+}
+.bg-midblue {
+    background-color: #7ed6df;
+}
+#nav {
+    min-width: 300px;
+    background-color: #33d9b2;
+    height: 100vh;
+    position: fixed;
+    padding: 0 7px;
+    border-right: rgba(71, 71, 135,0.5) solid 1px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.25);  
+}
+#nav .container {
+    height: 100%;
+}
+#nav li {
+    font-weight: bold;
+}
+#nav li:active {
+    color: #b33939;
+}
+#content {
+    margin-left: 300px;
+    padding-left: 7px;
+    background-color: #ffda79;
+}
+/* #ebc98c */
+#content .container {
+    margin: 0;
+}
+.retro-icon {
+    min-width: 40px;
+    min-height: 40px;
+    border: #383A3C;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%; 
+    display: inline-block;
+    background-color: #383A3C;
+    background-blend-mode: difference;
+}
+.retro-icon i {
+    color: #33d9b2 !important;
+    line-height: 20px;
+}
+.border-round {
+    border: #383A3C solid 2px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.border-red {
+    border: red solid 2px;
+}
+#nav-toggle {
+    display: none;
+}
+
+/* Responsive Queries */
+
+@media (max-width: 768px) {
+    #nav-toggle {
+        display: unset;
+        position: fixed;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.25);
+        border: #383A3C dashed 1px;
+        border-left-width: 0px;
+        background-color: #33d9b2;
+        top: 0;
+        left: -1px;
+        color: #383A3C;
+        font-size: 20px;
+        min-width: 35px;
+        min-height: 35px;
+        z-index: 20;
+        transition: left 300ms ease-out;
+    }
+    #nav {
+        left: -300px;
+        z-index: 20;
+        transition: left 300ms ease-out;
+        border-right: #383A3C dashed 1px;
+    }
+    #content{
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 980px) {
+
+}
+
+@media (min-width: 100px) and (max-width: 550px) {
+    
+
+}

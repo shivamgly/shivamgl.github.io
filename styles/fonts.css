@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+
+@font-face {
+    font-family: "Trevor";
+    font-style: normal;
+    font-weight: 100;
+    src: url("./fonts/trevor.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "HWTArtz";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/HWTArtzW00Regular.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "Bazar";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/bazar.ttf") format("woff2");
+}
