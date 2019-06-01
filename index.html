@@ -18,33 +18,105 @@
             <h1 class="font-bazar title-name">SHIVAM<br>GOYAL</h1>
             <div class="separator"><span>xxx</span></div>
             <ul class="list-unstyled mt-5 mb-5">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recent-posts">My Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="separator"><span>xxx</span></div>
             
             <div class="list-inline mt-5 mb-5 icon-list">
-                <div class="list-inline-item">
-                    <h6 class="border-round"><span class="retro-icon p-1"><i class="fab fa-facebook-f m-1"></i></span></h6>
+                <div class="list-inline-item onhover-up">
+                    <a target="_blank" href="https://github.com/shivamgoyal15">
+                        <h6 class="border-round"><span class="retro-icon p-1">
+                        <i class="fab fa-github m-1"></i>
+                        </span></h6>
+                    </a>
                 </div>
-                <div class="list-inline-item">
-                    <h6 class="border-round"><span class="retro-icon p-1"><i class="fas fa-comment-alt m-1"></i></span></h6>
+                <div class="list-inline-item onhover-up">
+                    <a href="irc://shivamgoyal" target="_blank" rel="noopener noreferrer">
+                        <h6 class="border-round"><span class="retro-icon p-1">
+                            <i class="fas fa-comment-alt m-1"></i>
+                        </span></h6>
+                    </a>
                 </div>
-                <div class="list-inline-item">
-                    <h6 class="border-round"><span class="retro-icon p-1"><i class="fas fa-envelope m-1"></i></span></h6>
+                <div class="list-inline-item onhover-up">
+                    <a href="mailto:shivgo@iitk.ac.in">
+                        <h6 class="border-round"><span class="retro-icon p-1">
+                            <i class="fas fa-envelope m-1"></i>
+                        </span></h6>
+                    </a>
                 </div>
             </div>
 
         </div>
         <button id="nav-toggle" class="mt-2" onclick="toggleNav()"> <i class="fas fa-ellipsis-v"></i></button>
     </section>
-    <section id="content">
+    <section id="about" class="content">
         <div class="container border-left text-center p-5">
-            <h1 class="font-hwt">Shivam Goyal</h1>
+            <img src="./images/me.png" class="border-round" id="profile-image">
+            <h1 class="font-hwt mb-0">About me</h1>
+            <div class="separator"><span>xxx</span></div>
+            <p class="mt-1">
+                I am a sophomore at IIT Kanpur. A curious person who always wants to know how things work.
+            </p>
         </div>
     </section>
-    
+    <section id="recent-posts" class="content">
+        <div class="container border-left text-left p-4 pt-5 pb-5">
+            <h1 class="font-hwt text-center">Recent <br class="d-md-none">Posts</h1>
+            <div class="separator mb-3"><span>xxx</span></div>
+            <a class="" href="./blogs/blog1.html">
+            <div class="post-short mb-5 pl-2">
+                <div class="post-title d-inline mb-2">
+                    <h2 class="font-trevor post-title mb-0">Reverse-Engineering "stdio.h"</h2>
+                    <span class="post-duration mr-4 mr-sm-5">
+                        <i class="fas fa-hourglass-half"></i>
+                        14 minutes read
+                    </span>
+                    <span class="post-time ml-4 ml-sm-5">
+                        <i class="fas fa-pen-nib"></i>
+                        20th June 2019
+                    </span>
+                </div>
+                <p>
+                    Have you ever wondered how does <span class="code">printf()</span> takes variable number of arguments.
+                </p>
+            </div>
+            </a>
+            <div class="post-short mb-5 pl-2">
+                <div class="post-title d-inline mb-2">
+                    <h2 class="font-trevor post-title mb-0">Reverse-Engineering stdio.h</h2>
+                    <span class="post-duration mr-4 mr-sm-5">
+                        <i class="fas fa-hourglass-half"></i>
+                        14 minutes read
+                    </span>
+                    <span class="post-time ml-4 ml-sm-5">
+                        <i class="fas fa-pen-nib"></i>
+                        20th June 2019
+                    </span>
+                </div>
+                <p>
+                    Have you ever wondered how does printf() takes variable number of arguments.
+                </p>
+            </div>
+            <div class="post-short mb-5 pl-2">
+                <div class="post-title d-inline mb-2">
+                    <h2 class="font-trevor post-title mb-0">Reverse-Engineering stdio.h</h2>
+                    <span class="post-duration mr-4 mr-sm-5">
+                        <i class="fas fa-hourglass-half"></i>
+                        14 minutes read
+                    </span>
+                    <span class="post-time ml-4 ml-sm-5">
+                        <i class="fas fa-pen-nib"></i>
+                        20th June 2019
+                    </span>
+                </div>
+                <p>
+                    Have you ever wondered how does printf() takes variable number of arguments.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Scripts -->

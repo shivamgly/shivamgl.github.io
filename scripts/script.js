@@ -1,6 +1,6 @@
 var nav = document.getElementById('nav');
 var navToggle = document.getElementById('nav-toggle');
-var content = document.getElementById('content');
+var contents = document.getElementsByClassName("content");
 var navOpen = false;
 
 function toggleNav () {
@@ -16,10 +16,10 @@ function toggleNav () {
     }
 }
 
-content.addEventListener("click", () => {
-    if (navOpen) {
-        nav.style.left = "-300px";
-        navToggle.style.left = "-1px";
-        navOpen = false;
-    }
-});
+for (var i = 0; i < contents.length; i++) {
+    contents[i].addEventListener("click", () => {
+        if (navOpen) {
+            toggleNav();
+        }
+    });
+}
