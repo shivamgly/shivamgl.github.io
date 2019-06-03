@@ -12,6 +12,24 @@ body {
     height: 2000px;
     color: #383A3C;
 }
+
+#loader {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #d1ccc0;
+    position: fixed;
+    z-index: 999;
+    overflow: hidden;
+}
+#loader .container {
+    position: fixed;
+    max-width: 180px;
+    top: calc(50vh - 90px);
+    left: calc(50vw - 90px);
+    color: #b33939;
+}
+
+
 h1 {
     font-family: 'Trevor', 'Roboto Slab', sans-serif;
     color: #383A3C;
