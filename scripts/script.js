@@ -1,10 +1,11 @@
 // Remove PreLoader
-var loader = document.getElementById('loader');
-function removeloader() {
-    loader.style.display = 'none';
-    loader.innerHTML = ' '; // Remove the SVG to save memory
-}
-window.onload(removeloader());
+window.onload = function () {
+    setTimeout(() => {
+        var loader = document.getElementById('loader');
+        loader.style.display = 'none';
+        loader.innerHTML = ' ';
+    }, 1000);
+};
 
 
 // Script to control Side Navbar on Mobile devices 
