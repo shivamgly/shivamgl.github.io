@@ -31,7 +31,7 @@ hr .double{
 }
 .separator {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     line-height: 20px;
     font-weight: 100 !important;
@@ -132,7 +132,8 @@ hr .double{
 }
 .retro-icon i {
     color: #33d9b2 !important;
-    line-height: 20px;
+    position: relative;
+    top: 5px;
 }
 .border-round {
     border: #383A3C solid 2px;
@@ -189,6 +190,53 @@ hr .double{
     padding: 2px 5px;
     
 }
+
+/* Contact */
+#contact {
+    background-color: #596275;
+    color: #fad390;
+}
+#contact h1 {
+    color: #fad390;
+}
+#contact .retro-icon {
+    min-width: 150px;
+    min-height: 150px;
+    border: #fad390;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%; 
+    display: inline-block;
+    background-color: #fad390;
+    background-blend-mode: difference;
+}
+#contact .retro-icon i {
+    font-size: 80px;
+    color: #596275 !important;
+    line-height: auto;
+    position: relative ;
+    top: 28px;
+}
+#contact .border-round {
+    border: #fad390 solid 2px;
+    border-radius: 50%;
+    padding: 3px;
+}
+#contact .border-round:hover {
+    background-color: #fad390;
+}
+
+#contact .separator span::before {
+    right: 100%;
+    margin-right: 4px;
+    border-color: #fad390 !important;
+}
+#contact .separator span::after {
+    left: 100%;
+    margin-left: 4px;
+    border-color: #fad390 !important;
+}
+
 /* blog post */
 #post {
     background-color: #d1ccc0;
@@ -307,7 +355,13 @@ hr .double{
         background-color: #b33939;
         border-radius: 2px;
     }
-
+    #post .post-duration, #post .post-time {
+        font-size: 13px;
+        color: #b33939;
+    }
+    .post-content img {
+        margin: auto;
+    }
     .post-content .img-lg-sm {
         max-width: 100%;
     }
