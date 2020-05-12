@@ -1,0 +1,74 @@
+:root {
+    --clr-blue: #124191;
+    --clr-link: #3c40c6;
+    --clr-red: #c0392b;
+    --clr-bg-p: #f3f2ee;
+    --clr-bg-s: #ffffff;
+    --clr-text-p: #000;
+    --clr-text-s: #fff;
+    --font-p: 'Gotu', sans-serif;
+    --font-s: 'Marmelad', sans-serif;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: var(--clr-text-p);
+    background-color: var(--clr-bg-p);
+    font-family: var(--font-p);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-s);
+}
+
+a {
+    color: var(--clr-link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--clr-link);
+    text-decoration: underline;
+}
+
+.spacer {
+    flex: 1 1;
+}
+
+nav {
+    background-color: #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav a {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.article {
+    background-color: white;
+    padding: 50px;
+    z-index: 1;
+}
