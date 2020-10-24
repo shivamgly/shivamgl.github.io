@@ -32,7 +32,7 @@ const contutus = (metaData = null) => {
       ...extraData
     };
   }
-  if (window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost') {
+  if (window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost' && contutusId !== "dont") {
     const req = new XMLHttpRequest();
     req.open("POST", serverURI, true);
     req.setRequestHeader("Content-Type", "application/json");
