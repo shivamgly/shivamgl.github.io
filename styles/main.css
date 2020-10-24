@@ -307,6 +307,25 @@ main {
   font-family: var(--font-p);
 }
 
+.quote::before {
+  content: "“";
+  font-size: 2rem;
+  position: relative;
+  top: 0.3rem;
+}
+
+.quote::after {
+  content: "”";
+  font-size: 2rem;
+  position: relative;
+  top: 0.3rem;
+}
+.quote-author {
+  padding-left: 2rem;
+}
+.quote-author::before {
+  content: "  —";
+}
 
 @media (min-width: 992px) {
   .blog .side {

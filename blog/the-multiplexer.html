@@ -683,61 +683,88 @@
         <div class="d-flex flex-lg-row flex-column">
           <div class="side"></div>
           <div class="p-2 header">
-            <h2 class="m-0">Contact</h2>
+            <h2 class="m-0">The Multiplexer</h2>
+            <p class="tag-list">
+              <i data-feather="pen-tool"></i>
+              <span class="pr-3">10th May 2020 </span>
+              <i data-feather="tag"></i>
+              <span>ideas; recombinant innovation; </span>
+            </p>
           </div>
         </div>
         <div class="body d-flex flex-lg-row flex-column">
           <div class="side text-left p-2">
             <div class="content-list pl-lg-4 pr-lg-2">
-              <!-- <h6 class="font-weight-bolder font-p">Contact Me</h6> -->
+              <h6 class="font-weight-bolder font-p">Key points:</h6>
               <ul id="kp-list"></ul>
             </div>
           </div>
           <div id="main" class="main p-2 text-justify">
             <p>
               <span class="quote">
-                If I had asked people what they wanted, they would have said
-                faster horses </span
+                If you want to have good ideas you must have many ideas </span
               ><br />
-              <span class="quote-author"> Henry Ford </span>
+              <span class="quote-author"> Linus Pauling </span>
             </p>
-            <div class="d-flex flex-column flex-wrap font-p">
-              <div class="flex-row d-flex my-3">
-                <div class="d-flex align-items-center pr-3">
-                  <i class="contact-icon" data-feather="at-sign"></i>
-                </div>
-                <div
-                  class="contact-details d-flex flex-column justify-content-center"
-                >
-                  <div id="mailEncrypted" class="p-0 m-0 font-0_90">
-                    0912130c1d153a13130e11541b19541314
-                  </div>
-                  <a href="#" onclick="decmail()">Click here to decrypt!</a>
-                </div>
-              </div>
-              <div class="flex-row d-flex my-3">
-                <div class="d-flex align-items-center pr-3">
-                  <i class="contact-icon" data-feather="linkedin"></i>
-                </div>
-                <div class="contact-details d-flex align-items-center">
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/shivamgly"
-                  >
-                    www.linkedin.com/in/shivamgly
-                  </a>
-                </div>
-              </div>
-              <div class="flex-row d-flex my-3">
-                <div class="d-flex align-items-center pr-3">
-                  <i class="contact-icon" data-feather="github"></i>
-                </div>
-                <div class="contact-details d-flex align-items-center">
-                  <a target="_blank" href="https://github.com/shivamgly"
-                    >github.com/shivamgly</a
-                  >
-                </div>
-              </div>
+            <p class="first">
+              This blog explores a different perspective to see ideas using
+              recombinant innovation (will focus mainly on startup ideas). And
+              will explore a tool to think of new ideas.
+            </p>
+            <span
+              tag="Recombinant Innovation"
+              id="recombinant-innovation"
+            ></span>
+            <p>
+              Recombinant innovation explores the possibility of inventing new
+              applications from a combination of existing technologies. For
+              example, the Waze app (an innovative navigation app) combines
+              digital-maps, GPS, and social networking to provide real-time
+              navigation, including the traffic data at any place.
+            </p>
+            <span
+              tag="Examples recombinant innovation"
+              id="examples-recombinant-innovation"
+            ></span>
+            <div>
+              <p>
+                Similarly, we can see the below ideas as a combination of
+                existing technologies:
+              </p>
+
+              <ul>
+                <li>
+                  <b>Uber</b> = Traffic management + location + yield management
+                </li>
+                <li>
+                  <b>Instagram</b> = social-networking + digital photography +
+                  photo-filters
+                </li>
+                <li><b>Whatsapp</b> = messenging + social-networking</li>
+                <li><b>Netflix (at its start)</b> = DVD + Mail</li>
+                <li><b>Research gate</b> = social-networking + research</li>
+              </ul>
+            </div>
+            <h4 tag="The Multiplexer" id="multiplexer">
+              A tool to think new ideas
+            </h4>
+            <div>
+              <p>
+                Inspired from the above perspective to see ideas. I made a tool
+                that would help in thinking a new idea by combining existing
+                technologies in the market.
+              </p>
+              <p>
+                <b>Try it out here:</b>
+                <a target="_blank" href="https://shivamgly.me/multiplexer"
+                  >https://shivamgly.me/multiplexer <i data-feather="link"></i>
+                </a>
+              </p>
+              <p>
+                I named it multiplexer because it combines multiple ideas into
+                an application. Now, every combination can-not create value but
+                still, it may help in thinking a new idea.
+              </p>
             </div>
 
             <div class="text-center text-black-50 mt-3">
@@ -754,50 +781,6 @@
       <p class="m-0 mt-0 mt-md-4">Shivam Goyal</p>
     </footer>
     <script src="../scripts/main.js"></script>
-    <script>
-      const cipher = (salt) => {
-        const textToChars = (text) =>
-          text.split("").map((c) => c.charCodeAt(0));
-        const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
-        const applySaltToChar = (code) =>
-          textToChars(salt).reduce((a, b) => a ^ b, code);
-
-        return (text) =>
-          text
-            .split("")
-            .map(textToChars)
-            .map(applySaltToChar)
-            .map(byteHex)
-            .join("");
-      };
-
-      const decipher = (salt) => {
-        const textToChars = (text) =>
-          text.split("").map((c) => c.charCodeAt(0));
-        const applySaltToChar = (code) =>
-          textToChars(salt).reduce((a, b) => a ^ b, code);
-        return (encoded) =>
-          encoded
-            .match(/.{1,2}/g)
-            .map((hex) => parseInt(hex, 16))
-            .map(applySaltToChar)
-            .map((charCode) => String.fromCharCode(charCode))
-            .join("");
-      };
-      const salt = window.location.hostname + "Tree";
-      console.log(cipher("shivamgly.me" + "Tree")("shivgo@iitk.ac.in"));
-      const decmail = () => {
-        const mailEncryptedElem = document.getElementById("mailEncrypted");
-        const mailAddr = decipher(salt)(mailEncryptedElem.innerText);
-        const mailAnchor = document.createElement("a");
-        mailAnchor.href = "mailto:" + mailAddr;
-        mailAnchor.innerText = mailAddr;
-        mailAnchor.target = "_blank";
-        const container = mailEncryptedElem.parentElement;
-        container.innerHTML = "";
-        container.appendChild(mailAnchor);
-        console.log(mailAddr);
-      };
-    </script>
+    <script src="../scripts/blog.js"></script>
   </body>
 </html>
