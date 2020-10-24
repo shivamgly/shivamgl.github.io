@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>!deaTome | Home</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/png" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Zilla+Slab:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Zilla+Slab:wght@500&family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/theme.min.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    <script src="./scripts/feather.min.js"></script>
+    <link rel="stylesheet" href="../styles/theme.min.css" />
+    <link rel="stylesheet" href="../styles/fonts/charter/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/fonts/Visby Round CF/stylesheet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/fonts/Rooney Sans Rounded/stylesheet.css"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+
+    <script src="../scripts/feather.min.js"></script>
     <script src="../scripts/contutus.js"></script>
   </head>
 
@@ -627,18 +638,20 @@
     <main style="min-height: 100vh">
       <div class="nav mt-0 p-1 d-none d-md-block nav-desktop">
         <div class="logo-container p-2">
-          <img class="logo-img-lg m-0 p-0" src="logo.png" />
+          <img class="logo-img-lg m-0 p-0" src="../logo.png" />
         </div>
         <div class="navbar">
           <div class="nav-list">
             <div class="title">!deaTome</div>
             <div class="spacer"></div>
             <div class="sub-title">
-              <a class="px-1" href="#"><i data-feather="home"></i> Home</a>
-              <a class="px-1" href="./p/about.html"
+              <a class="px-1" href="../index.html"
+                ><i data-feather="home"></i> Home</a
+              >
+              <a class="px-1" href="../p/about.html"
                 ><i data-feather="user"></i> About</a
               >
-              <a class="px-1" href="./p/contact.html"
+              <a class="px-1" href="../p/contact.html"
                 ><i data-feather="message-circle"></i> Contact</a
               >
             </div>
@@ -647,7 +660,7 @@
       </div>
       <div class="nav mt-0 p-1 d-block d-md-none nav-mobile">
         <div class="logo-container p-2">
-          <img class="logo-img-lg m-0 p-0" src="logo.png" />
+          <img class="logo-img-lg m-0 p-0" src="../logo.png" />
         </div>
         <div class="navbar p-1">
           <div
@@ -655,57 +668,135 @@
           >
             <div class="title">!deaTome</div>
             <div class="sub-title">
-              <a href="#"><i data-feather="home"></i> Home</a>
-              <a class="px-1" href="./p/about.html"
+              <a href="../index.html"><i data-feather="home"></i> Home</a>
+              <a class="px-1" href="../p/about.html"
                 ><i data-feather="user"></i> About</a
               >
-              <a href="./p/contact.html"
+              <a href="../p/contact.html"
                 ><i data-feather="message-circle"></i> Contact</a
               >
             </div>
           </div>
         </div>
       </div>
-      <section class="blog-list pt-4 mt-4">
-        <h6 style="width: 100%" class="text-left px-1">
-          <i data-feather="clock"></i> Recent Posts
-        </h6>
-        <a href="./blog/the-multiplexer.html" class="blog-post">
-          <h4 class="title">The Multiplexer</h4>
-          <h6 class="sub-title">Using Brute-force to generate new ideas!</h6>
-          <p class="tag-list">
-            <i data-feather="pen-tool"></i>
-            <span class="pr-3">10th May 2020 </span>
-            <i data-feather="tag"></i>
-            <span>ideas; recombinant innovation; </span>
-          </p>
-        </a>
-        <a href="./blog/intro-to-functional-programming.html" class="blog-post">
-          <h4 class="title">Intro to functional programming</h4>
-          <h6 class="sub-title">What is so functional in them?</h6>
-          <p class="tag-list">
-            <i data-feather="pen-tool"></i>
-            <span class="pr-3">5th Jan 2020 </span>
-            <i data-feather="tag"></i>
-            <span>coding; functional-programming; haskell; </span>
-          </p>
-        </a>
-        <a href="./blog/solving-the-password-reuse-problem.html" class="blog-post">
-          <h4 class="title">Unique passwords for every different website!</h4>
-          <h6 class="sub-title">An innovative solution to the password reuse problem!</h6>
-          <p class="tag-list">
-            <i data-feather="pen-tool"></i>
-            <span class="pr-3">22nd Sep 2019 </span>
-            <i data-feather="tag"></i>
-            <span>how to's </span>
-          </p>
-        </a>
+      <section class="blog pt-2 pt-md-3 px-3 px-lg-4 px-xl-5 mt-4 mb-5">
+        <div class="d-flex flex-lg-row flex-column">
+          <div class="side"></div>
+          <div class="p-2 header">
+            <h2 class="m-0">Contact</h2>
+          </div>
+        </div>
+        <div class="body d-flex flex-lg-row flex-column">
+          <div class="side text-left p-2">
+            <div class="content-list pl-lg-4 pr-lg-2">
+              <!-- <h6 class="font-weight-bolder font-p">Contact Me</h6> -->
+              <ul id="kp-list"></ul>
+            </div>
+          </div>
+          <div id="main" class="main p-2 text-justify">
+            <p>
+              “If I had asked people what they wanted, they would have said
+              faster horses. ”
+              <br />
+              - Henry Ford
+            </p>
+            <div class="d-flex flex-column flex-wrap font-p">
+              <div class="flex-row d-flex my-3">
+                <div class="d-flex align-items-center pr-3">
+                  <i class="contact-icon" data-feather="at-sign"></i>
+                </div>
+                <div
+                  class="contact-details d-flex flex-column justify-content-center"
+                >
+                  <div id="mailEncrypted" class="p-0 m-0 font-0_90">
+                    0912130c1d153a13130e11541b19541314
+                  </div>
+                  <a href="#" onclick="decmail()">Click here to decrypt!</a>
+                </div>
+              </div>
+              <div class="flex-row d-flex my-3">
+                <div class="d-flex align-items-center pr-3">
+                  <i class="contact-icon" data-feather="linkedin"></i>
+                </div>
+                <div class="contact-details d-flex align-items-center">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/shivamgly"
+                  >
+                    www.linkedin.com/in/shivamgly
+                  </a>
+                </div>
+              </div>
+              <div class="flex-row d-flex my-3">
+                <div class="d-flex align-items-center pr-3">
+                  <i class="contact-icon" data-feather="github"></i>
+                </div>
+                <div class="contact-details d-flex align-items-center">
+                  <a target="_blank" href="https://github.com/shivamgly"
+                    >github.com/shivamgly</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center text-black-50 mt-3">
+              <i data-feather="minus"></i>
+              <i data-feather="circle"></i>
+              <i data-feather="minus"></i>
+            </div>
+          </div>
+        </div>
       </section>
       <div class="spacer"></div>
     </main>
     <footer class="footer text-center py-1 font-s">
       <p class="m-0 mt-0 mt-md-4">Shivam Goyal</p>
     </footer>
-    <script src="./scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      const cipher = (salt) => {
+        const textToChars = (text) =>
+          text.split("").map((c) => c.charCodeAt(0));
+        const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
+        const applySaltToChar = (code) =>
+          textToChars(salt).reduce((a, b) => a ^ b, code);
+
+        return (text) =>
+          text
+            .split("")
+            .map(textToChars)
+            .map(applySaltToChar)
+            .map(byteHex)
+            .join("");
+      };
+
+      const decipher = (salt) => {
+        const textToChars = (text) =>
+          text.split("").map((c) => c.charCodeAt(0));
+        const applySaltToChar = (code) =>
+          textToChars(salt).reduce((a, b) => a ^ b, code);
+        return (encoded) =>
+          encoded
+            .match(/.{1,2}/g)
+            .map((hex) => parseInt(hex, 16))
+            .map(applySaltToChar)
+            .map((charCode) => String.fromCharCode(charCode))
+            .join("");
+      };
+      const salt = window.location.hostname + "Tree";
+      console.log(cipher("shivamgly.me" + "Tree")("shivgo@iitk.ac.in"));
+      const decmail = () => {
+        const mailEncryptedElem = document.getElementById("mailEncrypted");
+        const mailAddr = decipher(salt)(mailEncryptedElem.innerText);
+        const mailAnchor = document.createElement("a");
+        mailAnchor.href = "mailto:" + mailAddr;
+        mailAnchor.innerText = mailAddr;
+        mailAnchor.target = "_blank";
+        const container = mailEncryptedElem.parentElement;
+        container.innerHTML = "";
+        container.appendChild(mailAnchor);
+        console.log(mailAddr);
+      };
+    </script>
   </body>
 </html>

@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("Regular.woff2") format("woff2"),
+    url("Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("Regular_italic.woff2") format("woff2"),
+    url("Regular_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+/* 
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("Regular.woff2") format("woff2"),
+    url("Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-Heavy.woff") format("woff"),
+    url("VisbyRoundCF-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-Medium.eot");
+  src: local("RS-Rounded Medium"), local("VisbyRoundCF-Medium"),
+    url("VisbyRoundCF-Medium.eot?#iefix") format("embedded-opentype"),
+    url("VisbyRoundCF-Medium.woff2") format("woff2"),
+    url("VisbyRoundCF-Medium.woff") format("woff"),
+    url("VisbyRoundCF-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-ExtraLight.eot");
+  src: local("RS-Rounded ExtraLight"), local("VisbyRoundCF-ExtraLight"),
+    url("VisbyRoundCF-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("VisbyRoundCF-ExtraLight.woff2") format("woff2"),
+    url("VisbyRoundCF-ExtraLight.woff") format("woff"),
+    url("VisbyRoundCF-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-DemiBold.eot");
+  src: local("RS-Rounded DemiBold"), local("VisbyRoundCF-DemiBold"),
+    url("VisbyRoundCF-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("VisbyRoundCF-DemiBold.woff2") format("woff2"),
+    url("VisbyRoundCF-DemiBold.woff") format("woff"),
+    url("VisbyRoundCF-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-Bold.eot");
+  src: local("RS-Rounded Bold"), local("VisbyRoundCF-Bold"),
+    url("VisbyRoundCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("VisbyRoundCF-Bold.woff2") format("woff2"),
+    url("VisbyRoundCF-Bold.woff") format("woff"),
+    url("VisbyRoundCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-Regular.eot");
+  src: local("RS-Rounded Regular"), local("VisbyRoundCF-Regular"),
+    url("VisbyRoundCF-Regular.eot?#iefix") format("embedded-opentype"),
+    url("VisbyRoundCF-Regular.woff2") format("woff2"),
+    url("VisbyRoundCF-Regular.woff") format("woff"),
+    url("VisbyRoundCF-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RS-Rounded";
+  src: url("VisbyRoundCF-Light.eot");
+  src: local("RS-Rounded Light"), local("VisbyRoundCF-Light"),
+    url("VisbyRoundCF-Light.eot?#iefix") format("embedded-opentype"),
+    url("VisbyRoundCF-Light.woff2") format("woff2"),
+    url("VisbyRoundCF-Light.woff") format("woff"),
+    url("VisbyRoundCF-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+} */
