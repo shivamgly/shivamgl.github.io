@@ -3,6 +3,7 @@
   --clr-link: #282ca3;
   --clr-black: #000;
   --clr-red: #c0392b;
+  --clr-green: #16a085;
   --clr-bg-p: #eceae1;
   --clr-bg-s: rgb(194, 188, 178);
   --clr-text-p: #000;
@@ -249,6 +250,15 @@ nav a:hover {
   text-decoration: underline wavy;
 }
 
+.green, .code-block .comment{
+  color: var(--clr-green) !important;
+}
+
+.code-block .comment::before{
+  padding-left: 20px;
+  content: ' // ';
+}
+
 main {
   min-height: 100vh;
   background-color: var(--clr-bg-p);
@@ -340,14 +350,16 @@ main {
   }
 }
 
-.code-block {
+.code-block, code {
   background: rgba(0, 0, 0, 0.8);
   padding: 0.8rem 1rem !important;
-  color: #fff;
+  color: #e83e8c !important;
   font-family: 'Monaco', monospace;
   font-size: 0.95rem;
   border-radius: 2px;
 }
+
+
 
 /* Contacts Page */
 .contact-icon {
