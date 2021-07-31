@@ -470,12 +470,17 @@ footer {
   background-repeat: no-repeat, repeat-x, no-repeat;
   background-size: auto 100%;
   background-position: center right, center center, center left;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.8rem;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   height: 100px;
   z-index: -1000;
+}
+
+footer p {
+  font-family: var(--font-p);
 }
 
 @media (max-width: 740px) {
@@ -485,4 +490,10 @@ footer {
     background-size: auto 100%;
     background-position: center right, center center;
   }
+}
+
+.info-content {
+  word-wrap: break-word;
+  width: 75vw;
+  max-width: 700px;
 }

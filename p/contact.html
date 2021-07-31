@@ -760,7 +760,7 @@
       <div class="spacer"></div>
     </main>
     <footer class="footer text-center py-1 font-s">
-      <p class="m-0 mt-0 mt-md-4">Shivam Goyal</p>
+      <p class="m-0 mt-0 mt-md-4">© Shivam Goyal</p>
     </footer>
     <script src="../scripts/main.js"></script>
     <script>
@@ -794,7 +794,6 @@
             .join("");
       };
       const salt = window.location.hostname + "Tree";
-      console.log(cipher("shivamgly.me" + "Tree")("shivgo@iitk.ac.in"));
       const decmail = () => {
         const mailEncryptedElem = document.getElementById("mailEncrypted");
         const mailAddr = decipher(salt)(mailEncryptedElem.innerText);
